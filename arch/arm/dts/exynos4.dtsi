@@ -121,49 +121,44 @@
 		interrupts = <7 63 0>;
 	};
 
-	sdhci0: sdhci@12510000 {
+	sdhci@12510000 {
 		#address-cells = <1>;
 		#size-cells = <0>;
-		compatible = "samsung,exynos4412-sdhci";
+		compatible = "samsung,exynos-mmc";
 		reg = <0x12510000 0x1000>;
 		interrupts = <0 75 0>;
-		status = "disabled";
 	};
 
-	sdhci1: sdhci@12520000 {
+	sdhci@12520000 {
 		#address-cells = <1>;
 		#size-cells = <0>;
-		compatible = "samsung,exynos4412-sdhci";
+		compatible = "samsung,exynos-mmc";
 		reg = <0x12520000 0x1000>;
 		interrupts = <0 76 0>;
-		status = "disabled";
 	};
 
-	sdhci2: sdhci@12530000 {
+	sdhci@12530000 {
 		#address-cells = <1>;
 		#size-cells = <0>;
-		compatible = "samsung,exynos4412-sdhci";
+		compatible = "samsung,exynos-mmc";
 		reg = <0x12530000 0x1000>;
 		interrupts = <0 77 0>;
-		status = "disabled";
 	};
 
-	sdhci3: sdhci@12540000 {
+	sdhci@12540000 {
 		#address-cells = <1>;
 		#size-cells = <0>;
-		compatible = "samsung,exynos4412-sdhci";
+		compatible = "samsung,exynos-mmc";
 		reg = <0x12540000 0x1000>;
 		interrupts = <0 78 0>;
-		status = "disabled";
 	};
 
-	mshc_0: dwmmc@12550000 {
+	dwmmc@12550000 {
 		#address-cells = <1>;
 		#size-cells = <0>;
-		compatible = "samsung,exynos4412-dw-mshc";
+		compatible = "samsung,exynos-dwmmc";
 		reg = <0x12550000 0x1000>;
 		interrupts = <0 131 0>;
-		status = "disabled";
 	};
 
 };
